@@ -8,7 +8,7 @@ public class SpringDataJPAMultitenantConstants {
     public static final String DROP_SCHEMA = "DROP DATABASE IF EXISTS";
 
     //    public static final String DEFAULT_TENANT_ID = "masterdb2";
-    public static final String DEFAULT_TENANT_ID = "masterdb4";
+    public static String DEFAULT_TENANT_ID = "";
 
     public static final String SLASH = "/";
     public static final String ROOT_PATH = SLASH;

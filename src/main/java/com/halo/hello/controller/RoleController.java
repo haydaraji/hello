@@ -1,5 +1,6 @@
 package com.halo.hello.controller;
 
+import com.halo.hello.constant.SpringDataJPAMultitenantConstants;
 import com.halo.hello.model.Role;
 import com.halo.hello.model.UsersPolls;
 import com.halo.hello.repository.RoleRepository;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -34,4 +36,12 @@ public class RoleController {
         return new ResponseEntity(new ListResponse(true, roleList),
                 HttpStatus.OK);
     }
+
+    @GetMapping("/getProfile")
+    public ResponseEntity<?> getProfile() {
+        SpringDataJPAMultitenantConstants springDataJPAMultitenantConstants = new SpringDataJPAMultitenantConstants();
+        return new ResponseEntity(new ListResponse(true, Collections.singletonList(springDataJPAMultitenantConstants.DEFAULT_TENANT_ID)),
+                HttpStatus.OK);
+    }
+
 }
