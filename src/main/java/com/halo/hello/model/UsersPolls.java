@@ -50,4 +50,12 @@ public class UsersPolls extends DateAudit {
         private String theme;
         @Column(length = 30)
         private String colormode;
+
+
+        public UsersPolls(String name, String username, String email, String password) {
+                this.name = name;
+                this.username = username;
+                this.email = email;
+                this.password = password;
+        }
 }
