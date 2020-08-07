@@ -87,7 +87,6 @@ public class AuthController {
     }
 
 
-
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 

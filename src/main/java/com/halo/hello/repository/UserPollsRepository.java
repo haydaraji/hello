@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface UserPollsRepository extends JpaRepository<UsersPolls, Integer> {
-    UsersPolls findByid(int id);
+public interface UserPollsRepository extends JpaRepository<UsersPolls, Long> {
+    UsersPolls findByid(Long id);
     UsersPolls findUserById(Long id);
     UsersPolls findUserByLastJwt(String lastJwt);
     UsersPolls findUserByemail(String email);
