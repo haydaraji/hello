@@ -1,4 +1,4 @@
-package com.halo.hello.model.config;
+package com.halo.hello.config;
 
 import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.halo.hello.model.repository;
+package com.halo.hello.repository;
 
 import com.halo.hello.model.UsersPolls;
 import org.springframework.data.jpa.repository.JpaRepository;

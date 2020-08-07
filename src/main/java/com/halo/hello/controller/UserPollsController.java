@@ -1,8 +1,8 @@
-package com.halo.hello.model.controller;
+package com.halo.hello.controller;
 
 import com.halo.hello.model.UsersPolls;
-import com.halo.hello.model.repository.UserPollsRepository;
-import com.halo.hello.model.response.ListResponse;
+import com.halo.hello.repository.UserPollsRepository;
+import com.halo.hello.response.ListResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

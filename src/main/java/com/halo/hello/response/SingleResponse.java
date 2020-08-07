@@ -1,4 +1,4 @@
-package com.halo.hello.model.response;
+package com.halo.hello.response;
 
 import lombok.Data;
 

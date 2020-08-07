@@ -1,8 +1,8 @@
-package com.halo.hello.model.response;
+package com.halo.hello.response;
 
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
