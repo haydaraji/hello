@@ -1,8 +1,10 @@
 package com.halo.hello.model;
 
 import com.halo.hello.model.audit.DateAudit;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
@@ -20,6 +22,8 @@ import java.util.Set;
         })
 })
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UsersPolls extends DateAudit {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
